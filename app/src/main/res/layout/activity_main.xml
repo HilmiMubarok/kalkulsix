@@ -61,7 +61,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/hasil_text_view"
+        android:id="@+id/hasil"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:textSize="60dp"
