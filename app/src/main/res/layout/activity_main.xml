@@ -7,10 +7,66 @@
     android:orientation="vertical"
     tools:context="com.example.kalkulsix.kalkulatorantisix.MainActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/angkaone"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:hint="Angka 1"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/angkatwo"
+            android:layout_width="150dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:hint="Angka 2"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"/>
+
+        <Button
+            android:id="@+id/btnmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"/>
+        <Button
+            android:id="@+id/btnkali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"/>
+        <Button
+            android:id="@+id/btnbagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hasil_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textSize="60dp"
+        android:layout_gravity="center"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
