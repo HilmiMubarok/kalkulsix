@@ -51,26 +51,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int angka2 = Integer.parseInt(txtangkatwo.getText().toString());
         int hasil = 0;
 
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.btnplus:
                 hasil = angka1 + angka2;
-                Toast.makeText(this, "Hasil penjumlahan adalah "+ hasil, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Hasil penjumlahan adalah " + hasil, Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnmin:
                 hasil = angka1 - angka2;
-                Toast.makeText(this, "Hasil pengurangan adalah "+ hasil, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Hasil pengurangan adalah " + hasil, Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnkali:
                 hasil = angka1 * angka2;
-                Toast.makeText(this, "Hasil perkalian adalah "+ hasil, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Hasil perkalian adalah " + hasil, Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnbagi:
                 hasil = angka1 / angka2;
-                Toast.makeText(this, "Hasil pembagian adalah "+ hasil, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Hasil pembagian adalah " + hasil, Toast.LENGTH_SHORT).show();
                 break;
         }
 
-        if (hasil == 6){
+        if (("" + hasil).contains("6")) {
             txthasil.setText(getResources().getText(R.string.text_enam));
             Toast.makeText(this, "Error lol, LOL = Tolol", Toast.LENGTH_LONG).show();
             txthasil.setTextColor(getResources().getColor(R.color.textsalah));

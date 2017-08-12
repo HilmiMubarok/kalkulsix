@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/KalkulatorAntiSix.iml" filepath="$PROJECT_DIR$/KalkulatorAntiSix.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kalkulsix.iml" filepath="$PROJECT_DIR$/kalkulsix.iml" />
     </modules>
   </component>
 </project>
