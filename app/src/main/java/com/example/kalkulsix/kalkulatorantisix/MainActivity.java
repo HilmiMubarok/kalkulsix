@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (("" + hasil).contains("6")) {
             txthasil.setText(getResources().getText(R.string.text_enam));
+            Toast.makeText(this, "Error lol, LOL = Tolol", Toast.LENGTH_LONG).show();
             txthasil.setTextColor(getResources().getColor(R.color.textsalah));
             imggambar.setImageResource(R.drawable.gilang);
         } else {
