@@ -13,7 +13,19 @@ Ini hanya sebatas coba-coba saja :v
 * **Aji Setya** - *Initial work* - [AjiSetya](https://github.com/AjiSetya)
 
 ## Contact
+
+Hilmi
+* Gmail : m.hilmimubarok@gmail.com
+* Wa & Telegram : 085877690812
+
+AjiSetya
+* Gmail : setyaaji07@gmail.com
+* Wa & Telegram : 087700633786
+
+# Thank You
+=======
 * Gmail : m.hilmimubarok@gmail.com
 * Wa & Telegram : 085877690812
 
 # Thank You
+

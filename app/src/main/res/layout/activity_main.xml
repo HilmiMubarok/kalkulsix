@@ -1,77 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:fillViewport="true"
+    android:padding="16dp"
     tools:context="com.example.kalkulsix.kalkulatorantisix.MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/angkaone"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:hint="Angka 1"
-            android:layout_weight="1"/>
-
-        <EditText
-            android:id="@+id/angkatwo"
-            android:layout_width="150dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="15dp"
-            android:layout_height="wrap_content"
-            android:hint="Angka 2"
-            android:layout_weight="1"/>
-
-    </LinearLayout>
-
-    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btnplus"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="+" />
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btnmin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
 
-        <Button
-            android:id="@+id/btnkali"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="*" />
+                <EditText
+                    android:id="@+id/txtangkaone"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/angkaone" />
+            </android.support.design.widget.TextInputLayout>
 
-        <Button
-            android:id="@+id/btnbagi"
-            android:layout_width="wrap_content"
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/txtangkatwo"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/angkatwo" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="/" />
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnplus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/btnmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/btnkali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="*" />
+
+            <Button
+                android:id="@+id/btnbagi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="/" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txthasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="60sp" />
+
+        <ImageView
+            android:layout_marginTop="16dp"
+            android:id="@+id/imggambar"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="250dp"
+            android:layout_height="250dp" />
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/hasil"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:textSize="60dp"
-        android:layout_gravity="center"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</LinearLayout>
+</ScrollView>
