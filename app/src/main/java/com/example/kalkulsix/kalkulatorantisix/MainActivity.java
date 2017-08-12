@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
 
-        if (hasil == 6){
+        if (( "" + hasil ).contains( "6" )){
             txthasil.setText(getResources().getText(R.string.text_enam));
             txthasil.setTextColor(getResources().getColor(R.color.textsalah));
             imggambar.setImageResource(R.drawable.gilang);
