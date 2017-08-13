@@ -54,31 +54,61 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()) {
             case R.id.btnplus:
                 hasil = angka1 + angka2;
-                Toast.makeText(this, "Hasil penjumlahan adalah " + hasil, Toast.LENGTH_SHORT).show();
+                if (("" + hasil).contains("6")) {
+                    txthasil.setText(getResources().getText(R.string.text_enam));
+                    Toast.makeText(this, "Error lol, LOL = Tolol", Toast.LENGTH_LONG).show();
+                    txthasil.setTextColor(getResources().getColor(R.color.textsalah));
+                    imggambar.setImageResource(R.drawable.gilang);
+                } else {
+                    txthasil.setText(String.valueOf(hasil));
+                    Toast.makeText(this, "Hasil penjumlahan adalah " + hasil, Toast.LENGTH_SHORT).show();
+                    txthasil.setTextColor(getResources().getColor(R.color.textnormal));
+                    imggambar.setImageResource(0);
+                }
                 break;
             case R.id.btnmin:
                 hasil = angka1 - angka2;
-                Toast.makeText(this, "Hasil pengurangan adalah " + hasil, Toast.LENGTH_SHORT).show();
+                if (("" + hasil).contains("6")) {
+                    txthasil.setText(getResources().getText(R.string.text_enam));
+                    Toast.makeText(this, "Error lol, LOL = Tolol", Toast.LENGTH_LONG).show();
+                    txthasil.setTextColor(getResources().getColor(R.color.textsalah));
+                    imggambar.setImageResource(R.drawable.gilang);
+                } else {
+                    txthasil.setText(String.valueOf(hasil));
+                    Toast.makeText(this, "Hasil pengurangan adalah " + hasil, Toast.LENGTH_SHORT).show();
+                    txthasil.setTextColor(getResources().getColor(R.color.textnormal));
+                    imggambar.setImageResource(0);
+                }
                 break;
             case R.id.btnkali:
                 hasil = angka1 * angka2;
-                Toast.makeText(this, "Hasil perkalian adalah " + hasil, Toast.LENGTH_SHORT).show();
+                if (("" + hasil).contains("6")) {
+                    txthasil.setText(getResources().getText(R.string.text_enam));
+                    Toast.makeText(this, "Error lol, LOL = Tolol", Toast.LENGTH_LONG).show();
+                    txthasil.setTextColor(getResources().getColor(R.color.textsalah));
+                    imggambar.setImageResource(R.drawable.gilang);
+                } else {
+                    txthasil.setText(String.valueOf(hasil));
+                    Toast.makeText(this, "Hasil perkalian adalah " + hasil, Toast.LENGTH_SHORT).show();
+                    txthasil.setTextColor(getResources().getColor(R.color.textnormal));
+                    imggambar.setImageResource(0);
+                }
                 break;
             case R.id.btnbagi:
                 hasil = angka1 / angka2;
-                Toast.makeText(this, "Hasil pembagian adalah " + hasil, Toast.LENGTH_SHORT).show();
+                if (("" + hasil).contains("6")) {
+                    txthasil.setText(getResources().getText(R.string.text_enam));
+                    Toast.makeText(this, "Error lol, LOL = Tolol", Toast.LENGTH_LONG).show();
+                    txthasil.setTextColor(getResources().getColor(R.color.textsalah));
+                    imggambar.setImageResource(R.drawable.gilang);
+                } else {
+                    txthasil.setText(String.valueOf(hasil));
+                    Toast.makeText(this, "Hasil pembagian adalah " + hasil, Toast.LENGTH_SHORT).show();
+                    txthasil.setTextColor(getResources().getColor(R.color.textnormal));
+                    imggambar.setImageResource(0);
+                }
                 break;
         }
 
-        if (("" + hasil).contains("6")) {
-            txthasil.setText(getResources().getText(R.string.text_enam));
-            Toast.makeText(this, "Error lol, LOL = Tolol", Toast.LENGTH_LONG).show();
-            txthasil.setTextColor(getResources().getColor(R.color.textsalah));
-            imggambar.setImageResource(R.drawable.gilang);
-        } else {
-            txthasil.setText(String.valueOf(hasil));
-            txthasil.setTextColor(getResources().getColor(R.color.textnormal));
-            imggambar.setImageResource(0);
-        }
     }
 }
